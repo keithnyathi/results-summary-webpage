@@ -38,7 +38,8 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: rgb(236, 235, 234);
+  background-color: rgb(255, 255, 255);
+
 }
 
 .container-1{
@@ -56,13 +57,14 @@
    font-size: 1.3rem;
    margin-top: 25px;
    color: rgb(204, 195, 195);
+   font-weight: 600;
 }
 
 .score{
   height: 17vh;
   width: 135px;
   border-radius: 50%;
-  background: linear-gradient( hsl(252, 64%, 46%), hsl(241, 56%, 33%) ) ;
+  background: linear-gradient( hsla(252, 64%, 46%,0.7), hsla(241, 56%, 33%,0.5) ) ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +105,7 @@
 }
 
 .container-2{
-  background-color: rgb(236, 235, 234);
+  background-color: rgb(255, 255, 255);
   height: 56vh;
   display: flex;
   flex-direction: column;
@@ -167,6 +169,12 @@
 
 .reaction .span-1{
   color: hsl(0, 100%, 67%);
+  font-weight: 600;
+}
+
+.reaction p:not(span){
+  color: hsla(0, 2%, 58%, 0.8);
+  font-weight: 600;
 }
 
 .memory{
@@ -175,6 +183,12 @@
 
 .memory .span-1{
   color: hsl(39, 100%, 56%);
+  font-weight: 600;
+}
+
+.memory p:not(span){
+  color: hsla(0, 2%, 58%, 0.8);
+  font-weight: 600;
 }
 
 .verbal{
@@ -183,6 +197,12 @@
 
 .verbal .span-1{
   color: hsl(166, 100%, 37%);
+  font-weight: 600;
+}
+
+.verbal p:not(span){
+  color: hsla(0, 2%, 58%, 0.8);
+  font-weight: 600;
 }
 
 .visual{
@@ -191,13 +211,19 @@
 
 .visual .span-1{
   color: hsl(234, 85%, 45%);
+  font-weight: 600;
+}
+
+.visual p:not(span){
+  color: hsla(0, 2%, 58%, 0.8);
+  font-weight: 600;
 }
 
 button{
   height: 7vh;
   width: 80%;
   border: none;
-  background: rgb(8, 2, 43);
+  background: hsl(224, 30%, 27%);
   color: white;
   font-size: 1.2rem;
   border-radius: 32px;
@@ -258,9 +284,11 @@ button:hover{
 
 .container-1 h3{
  
-  margin-top: 25px;
+  margin-top: 28px;
 
   font-size: 1.9rem;
+
+  margin-bottom: -5px;
 
 }
 
@@ -272,6 +300,38 @@ button:hover{
   opacity: 0.7;
   margin-left: 13px;
   margin-top: 20px;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual{
+  height: 6vh;
+  width: 80%;
+  
+  
+}
+
+.reaction .span-1,
+.memory .span-1{
+  margin-right: 140px;
+  
+   
+}
+
+.verbal .span-1,
+.visual .span-1{
+ margin-right: 156px ;
+ 
+}
+
+
+button{
+  height: 5vh;
+ 
+  
+  margin-top: 15px;
+
 }
 
 }
