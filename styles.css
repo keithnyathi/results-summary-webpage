@@ -1,0 +1,277 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: HankenGrotesk;
+  
+}
+
+
+
+:root{
+  --background-color-1: hsl(252, 100%, 67%);
+  --background-color-2: hsl(241, 81%, 54%);
+
+  --summary-color-1: hsl(0, 100%, 67%);
+  --summary-color-2: hsl(39, 100%, 56%);
+  --summary-color-3: hsl(166, 100%, 37%);
+  --summary-color-4: hsl(234, 85%, 45%);
+
+  --circle-color-1: hsla(256, 72%, 46%, 1);
+  --circle-color-2: hsla(241, 72%, 46%, 0);
+
+
+  
+}
+
+
+
+
+.main-container{
+  width: 375px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 235, 234);
+}
+
+.container-1{
+  background: linear-gradient(var(--background-color-1), var(--background-color-2));
+  height: 44vh;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.your-result{
+   font-size: 1.3rem;
+   margin-top: 25px;
+   color: rgb(204, 195, 195);
+}
+
+.score{
+  height: 17vh;
+  width: 135px;
+  border-radius: 50%;
+  background: linear-gradient( hsl(252, 64%, 46%), hsl(241, 56%, 33%) ) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: beige;
+  margin-top: 22px;
+ 
+  
+
+}
+
+
+.score .span-1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  
+}
+
+
+.score .span-2{
+  color: lightgrey;
+  opacity: 0.6;
+}
+
+.container-1 h3{
+  color: white;
+  margin: 14px;
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.explanation{
+  color: white;
+  width: 80%;
+  font-size: 1.05rem;
+  opacity: 0.7;
+  margin-left: 13px;
+}
+
+.container-2{
+  background-color: rgb(236, 235, 234);
+  height: 56vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.summary{
+  margin: 25px 200px 0 0 ;
+  color: rgb(9, 2, 29);
+  font-size: 1.2rem;
+
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual{
+  height: 7vh;
+  width: 80%;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 12px;
+  color:  rgb(8, 2, 43);
+  padding-left: 14px;
+  
+}
+
+.reaction .span-1,
+.memory .span-1{
+  margin-right: 125px;
+  
+   
+}
+
+.verbal .span-1,
+.visual .span-1{
+ margin-right: 138px ;
+ 
+}
+
+.visual .span-2,
+.memory .span-2,
+.verbal .span-2,
+.reaction .span-2{
+  margin-left: -10px;
+  margin-right: 10px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color:  rgb(8, 2, 43);
+}
+
+.reaction{
+  background: hsla(0, 100%, 67%, 0.06 );
+}
+
+.reaction .span-1{
+  color: hsl(0, 100%, 67%);
+}
+
+.memory{
+  background:hsla(39, 100%, 56%, 0.06);
+}
+
+.memory .span-1{
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+  background: hsla(166, 100%, 37%, 0.06);
+}
+
+.verbal .span-1{
+  color: hsl(166, 100%, 37%);
+}
+
+.visual{
+  background: hsla(234, 85%, 45%, 0.06);
+}
+
+.visual .span-1{
+  color: hsl(234, 85%, 45%);
+}
+
+button{
+  height: 7vh;
+  width: 80%;
+  border: none;
+  background: rgb(8, 2, 43);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 32px;
+  cursor: pointer;
+
+}
+
+button:hover{
+  background:  linear-gradient(var(--background-color-1), var(--background-color-2));
+}
+
+
+@media screen and (min-width: 1920px ) {
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .main-container{
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-1{
+    
+    height: 50vh;
+    width: 50%;
+    border-radius: 25px;
+ 
+  
+  }
+
+  .container-2{
+    
+    height: 50vh;
+    width: 50%;
+    border-radius: 25px;
+   
+  
+}
+
+.score{
+  height: 20vh;
+  width: 200px;
+ 
+ 
+  
+
+}
+
+.container-1 h3{
+ 
+  margin-top: 25px;
+
+  font-size: 1.9rem;
+
+}
+
+.explanation{
+  color: white;
+  width: 60%;
+  text-align: center;
+  font-size: 1.05rem;
+  opacity: 0.7;
+  margin-left: 13px;
+  margin-top: 20px;
+}
+
+}
