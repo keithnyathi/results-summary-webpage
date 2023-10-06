@@ -34,7 +34,7 @@
 
 
 .main-container{
-  width: autopx;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
